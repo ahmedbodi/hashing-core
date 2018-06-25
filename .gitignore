@@ -2,4 +2,6 @@ algos/obj/*.o
 algos/obj/sha3/*.o
 algos/obj/ar2/*.o
 libs/*.a
-package-lock.json
+nodejs/build
+nodejs/package-lock.json
+nodejs/node_modules

@@ -172,32 +172,31 @@ using namespace v8;
     SET_BUFFER_RETURN(output, output_len); \
 }
 
- DECLARE_CALLBACK(blake, blake_hash, 32);
+ // Hashing-Core Callbacks
  DECLARE_CALLBACK(c11, c11_hash, 32);
- DECLARE_CALLBACK(fresh, fresh_hash, 32);
- DECLARE_CALLBACK(groestl, groestl_hash, 32);
- DECLARE_CALLBACK(groestlmyriad, groestlmyriad_hash, 32);
- DECLARE_CALLBACK(nist5, nist5_hash, 32);
- DECLARE_CALLBACK(quark, quark_hash, 32);
- DECLARE_CALLBACK(qubit, qubit_hash, 32);
- DECLARE_CALLBACK(skein, skein_hash, 32);
  DECLARE_CALLBACK(x11, x11_hash, 32);
+ DECLARE_CALLBACK(x12, x12_hash, 32);
  DECLARE_CALLBACK(x13, x13_hash, 32);
+ DECLARE_CALLBACK(x14, x14_hash, 32);
  DECLARE_CALLBACK(x15, x15_hash, 32);
+ DECLARE_CALLBACK(x17, x17_hash, 32);
+ DECLARE_CALLBACK(x11evo, x11evo_hash, 32);
+ DECLARE_CALLBACK(xevan, xevan_hash, 32);
+ DECLARE_CALLBACK(x16r, x16r_hash, 32);
+ DECLARE_CALLBACK(x16s, x16s_hash, 32);
+
 
 DECLARE_INIT(init) {
-    NODE_SET_METHOD(exports, "blake", blake);
-    NODE_SET_METHOD(exports, "c11", c11);
-    NODE_SET_METHOD(exports, "fresh", fresh);
-    NODE_SET_METHOD(exports, "groestl", groestl);
-    NODE_SET_METHOD(exports, "groestlmyriad", groestlmyriad);
-    NODE_SET_METHOD(exports, "nist5", nist5);
-    NODE_SET_METHOD(exports, "quark", quark);
-    NODE_SET_METHOD(exports, "qubit", qubit);
-    NODE_SET_METHOD(exports, "skein", skein);
     NODE_SET_METHOD(exports, "x11", x11);
+    NODE_SET_METHOD(exports, "x12", x12);
     NODE_SET_METHOD(exports, "x13", x13);
+    NODE_SET_METHOD(exports, "x14", x14);
     NODE_SET_METHOD(exports, "x15", x15);
+    NODE_SET_METHOD(exports, "x17", x17);
+    NODE_SET_METHOD(exports, "x11evo", x11evo);
+    NODE_SET_METHOD(exports, "xevan", xevan);
+    NODE_SET_METHOD(exports, "x16r", x16r);
+    NODE_SET_METHOD(exports, "x16s", x16s);
 }
 
 NODE_MODULE(multihashing, init)
