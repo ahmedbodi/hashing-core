@@ -1,9 +1,9 @@
 {
     "targets": [
         {
-            "target_name": "multihashing",
+            "target_name": "hashingcore",
             "sources": [
-                "multihashing.cc",
+                "hashingcore.cc",
             ],
 	    "libraries": [
 		"../../libs/libalgos.a"
