@@ -1,14 +1,14 @@
 {
-    "name": "multi-hashing",
-    "version": "0.0.9",
-    "main": "multihashing",
+    "name": "hashing-core",
+    "version": "0.0.1",
+    "main": "hashingcore",
     "author": {
-        "name": "Matthew Little",
-        "email": "zone117x@gmail.com"
+        "name": "Ahmed Bodiwala",
+        "email": "ahmedbodi@crypto-expert.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zone117x/node-multi-hashing.git"
+        "url": "https://github.com/ahmedbodi/hashing-core.git"
     },
     "dependencies": {
         "bindings": "*"

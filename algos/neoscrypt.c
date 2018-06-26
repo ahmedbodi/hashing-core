@@ -960,3 +960,8 @@ void neoscrypt(const uchar *password, uchar *output, uint profile) {
 
 }
 
+void neoscrypt_hash(const char* input, char* output, uint32_t len)
+{
+        neoscrypt((unsigned char *)input, (unsigned char *)output, 0x80000620);
+}
+

@@ -679,3 +679,9 @@ void scrypt_1024_1_1_256(const unsigned char* input, unsigned char* output)
 	scrypt_1024_1_1_256_sp(input, output, scratchpad);
 }
 
+void scrypt_hash(const char* input, char* output, uint32_t len)
+{
+        scrypt_1024_1_1_256((unsigned char *)input, (unsigned char *)output);
+}
+
+
